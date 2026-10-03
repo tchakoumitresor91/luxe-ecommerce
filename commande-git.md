@@ -1,0 +1,12 @@
+-git init cree un dossier cacher .git ui vas suivre l;'hisytorique du projet 
+-le fichier .giignore qui permet de mettre les elememtn qui ne sront ps pousse sur ithub ( element , fichier importanyt et privee oucontenant des donnees sensibles ) sur github. creer a la racine du projet
+-git status, permet de te lister tous les fichier de ton projet (non suivis)
+-git add . , permet de definir tous ce qu doit etres suivis par git dans le projet
+-git commit , permet de preciser, rnseigner sur la nature du travail poussr sur github
+-git remote add origin <url-de-momn-depot> , our dire a git ou est les depot distant
+-git branch -M main , permet de s'assurer que ma branche s'appele bien main
+-git push -u origin main, -u permegt de memoriser le lien entre ma branche locale et le main sur github
+-git branch pour creer une branche
+-git checkout pour accder a une branche
+-git checkout -b pour creer et directemnt acceder a une branche 
+NB: en devops pour faire un projet on commence par les poser ls variables(typographie, l'espacements, couleurs) pour plus de clarter das le projet et le code
