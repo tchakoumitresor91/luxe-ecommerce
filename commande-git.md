@@ -12,3 +12,8 @@
 NB: en devops pour faire un projet on commence par les poser ls variables(typographie, l'espacements, couleurs) pour plus de clarter das le projet et le code
 -git branch -m nom ancienne branche nom nouvelle branche pour renommer une branche 
 -git config --global push.autoSetupRemote true pour eviter de taper ;le -u a chaque push git 
+-commnt creer ton un pull request :
+option A : github CLI(gh), dans le terminal
+gh --version : pour verifier si c'est installer 
+s'il n'est pas installer faire winget installl --id GitHub
+gh pr create --base main --head nom branche --title "feat: header, side menu and bottom nav" --body "Adds shared header, hamburger side menu and bottom navigation used across all nbres de pages."   pour creer le pull request
