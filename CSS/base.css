@@ -19,7 +19,7 @@ body {
 }
 
 img {
-    max-with:100%;
+    max-width:100%;
     display:block;
 }
 
@@ -47,13 +47,13 @@ button {
     --color-bg: #f7f5f1; /*fond beige creme*/
     --color-surface:#ffffff; /*cartes, fonds blancs*/
     --color-text: #1a1a1a;
-    --color-text-muted: #6b6bb6;
+    --color-text-muted: #6b6b6b;
     --color-border: #e5e2dc;
 
     /*typogfraphie*/
     --font-base: 'helvetica neue', arial, sans-serif;
     --fs-sm: 0.875rem;
-    --font-base: 1rem;
+    --fs-base: 1rem;
     --fs-lg: 1.25rem;
     --fs-xl: 2rem;
 

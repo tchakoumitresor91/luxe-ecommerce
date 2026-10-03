@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-       <link rel="styleshe et" href="CSS/base.css">
-       <meta charset="UTF-8">
-    </head>
-    <body>
-         <hedear class="site-header">
-            <button class="header-icon menu-toggle" id="menu-toggle" arial-lbvel="Ouvrir le menu">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
-            <a herf="index.html" class="logo">LUXE</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/components.css">
+    <title>LUXE — Accueil</title>
+</head>
+<body>
+    <header class="site-header">
+        <button class="header-icon menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
 
-            <a href="panier.html" class="header-icon   cart-icon"   arial-label="panier">
-                <svg viewBox="0 0 24 24" with="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M6 2 3 6v14a2 2 0 0  0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
-                    <path d="M3 6h18"/>
-                    <path d="M16 10a4 4 0 0 1-8 0"/>
-                </svg>
-            </a>
-        </hedear>
-        <nav class="bottom-nav">
-            <a herf="index.html" class="nav-item active">
-                <svg viewBox="0 0  24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M3 10 12 319 7v9a2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2v-9Z"/>
-                </svg> 
-                <span>Home</span>
-            </a>
-            <a href="shop.html" class="nav-items">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" />
-                    <rect x="3" y="3" width="7" height="7" /><rect x="14" y="14" width="7" height="7" />
-                </svg>                                      
-                <span>Shop</span>
-            </a>
-            <a href="favoris.html" class="nav-items">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                     <path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.5 5.4 4 2-2.5 3.5-4  5.5-4C21 5 23.5 8.5 21.5 12.5 19 16.65 12 21 12 21Z"/>
-                </svg>
-            </a>
-            <a href="profil.html" class="nav-item">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="8" r="4" /><path d="M14 21c0-4 3.5-7 8-7s8 3 8 7"/>
-                </svg>
-            </a>
-        </nav>
-    </body>
-</html>       
+        <a href="index.html" class="logo">LUXE</a>
+
+        <a href="panier.html" class="header-icon cart-icon" aria-label="Panier">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                <path d="M3 6h18"/>
+                <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+        </a>
+    </header>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <nav class="side-menu" id="sideMenu" aria-hidden="true">
+        <button class="menu-close" id="menuClose" aria-label="Fermer le menu">&times;</button>
+        <ul class="side-menu-links">
+            <li><a href="shop.html?category=mode">Mode</a></li>
+            <li><a href="shop.html?category=maison">Maison</a></li>
+            <li><a href="shop.html?category=tech">Tech</a></li>
+            <li><a href="shop.html?category=beaute">Beauté</a></li>
+            <li><a href="shop.html?category=bijoux">Bijoux</a></li>
+        </ul>
+    </nav>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item active">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 10 12 3l9 7v9a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2v-9Z"/>
+            </svg>
+            <span>Home</span>
+        </a>
+        <a href="shop.html" class="nav-item">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
+            </svg>
+            <span>Shop</span>
+        </a>
+        <a href="favoris.html" class="nav-item">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.5 5.5 4 2-2.5 3.5-4 5.5-4C21 5 23.5 8.5 21.5 12.5 19 16.65 12 21 12 21Z"/>
+            </svg>
+            <span>Saved</span>
+        </a>
+        <a href="profil.html" class="nav-item">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/>
+            </svg>
+            <span>Profile</span>
+        </a>
+    </nav>
+</body>
+</html>
