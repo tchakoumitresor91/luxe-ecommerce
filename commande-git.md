@@ -10,3 +10,5 @@
 -git checkout pour accder a une branche
 -git checkout -b pour creer et directemnt acceder a une branche 
 NB: en devops pour faire un projet on commence par les poser ls variables(typographie, l'espacements, couleurs) pour plus de clarter das le projet et le code
+-git branch -m nom ancienne branche nom nouvelle branche pour renommer une branche 
+-git config --global push.autoSetupRemote true pour eviter de taper ;le -u a chaque push git 
